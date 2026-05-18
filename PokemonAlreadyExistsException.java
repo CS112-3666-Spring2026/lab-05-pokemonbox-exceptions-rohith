@@ -2,15 +2,15 @@ public class PokemonAlreadyExistsException extends Exception {
     Pokemon duplicate;
 
     public PokemonAlreadyExistsException() {
-        super("Error: Pokemon already exists in bow!");
+        super("Error: Pokemon already exists in box!");
     }
 
     public PokemonAlreadyExistsException(String message, Pokemon duplicate) {
-        super(message + " Duplicate POkemone = " + duplicate);
+        super(message + " Duplicate Pokemon = " + duplicate);
         this.duplicate = duplicate;
     }
 
-    public Pokemon getPokemone() {
+    public Pokemon getDuplicate() {
         return this.duplicate;
     }
 }
