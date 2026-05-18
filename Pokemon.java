@@ -16,9 +16,6 @@ public class Pokemon {
 	public Pokemon(String name, String type1, String type2) throws IllegalArgumentException {
 		if (!this.setAll(name, type1, type2)) {
 			throw new IllegalArgumentException("Pokemon full constructor illegal argument passed.");
-			/*System.out.println("ERROR: Pokemon full constructor illegal argument passed. Exiting program.");
-			System.exit(0);
-			*/
 		}
 	}
 
